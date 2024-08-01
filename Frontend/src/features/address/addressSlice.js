@@ -1,3 +1,10 @@
+//This slice manages CRUD operations and state updates for addresses,
+ // providing a clean way to handle asynchronous operations with Redux Toolkit. 
+//It ensures the UI is informed of the loading state and errors, and it uses Ant Design for user notifications.
+
+
+
+
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import handelDataFetch from "../../utils/handelDataFetch";
 import { message } from "antd";
@@ -200,3 +207,5 @@ export const addressSlice = createSlice({
 
 export const { setSelectedAddress } = addressSlice.actions;
 export default addressSlice.reducer; 
+
+
